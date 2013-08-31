@@ -1,0 +1,4 @@
+DEBUG_APPS = (
+    # put the debugging apps here
+    #'django_extensions','devserver',
+)
