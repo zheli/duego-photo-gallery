@@ -1,14 +1,6 @@
-django1.5-generic-project-template
-==================================
+===To the the APIs===
 
-This is a generic project template for django1.5 based on https://github.com/josephmisiti/generic-django-project.
-
-Create your project with this command:
-```
-django-admin.py startproject --template=django1.5-generic-project-template [YOUR PROJECT NAME]
-```
-
-And add new app using this command:
-```
-mkdir apps/[new_app_name] && python manage.py startapp [new_app_name] apps/[new_app_name]
-```
+1. Make a new virtualenv
+2. pip install -r requirements.txt
+3. Populate the database using "python manage.py syncdb"
+4. Run tests using "python manage.py test rest_api"
