@@ -1,4 +1,19 @@
+import sys
+if 'test' in sys.argv:
+    DATABASES = {
+            'default': {
+                'NAME': 'test.db',
+                'ENGINE': 'django.db.backends.sqlite3',
+                }
+            }
+else:
+    DATABASES = {
+            'default': {
+                'NAME': 'dev.db',
+                'ENGINE': 'django.db.backends.sqlite3',
+                }
+            }
 DEBUG_APPS = (
     # put the debugging apps here
-    #'django_extensions','devserver',
+    'django_extensions','devserver',
 )
