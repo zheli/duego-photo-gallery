@@ -1,6 +1,6 @@
 from rest_framework import mixins, generics
 # Create your views here.
-class CreateModelViewSet(mixins.CreateModelViewSet, generics.GenericAPIView):
+class CreateModelViewSet(mixins.CreateModelMixin, generics.GenericAPIView):
     pass
 
 class CreateListModelViewSet(mixins.CreateModelMixin, mixins.ListModelMixin,
